@@ -166,3 +166,53 @@ canvas {
   font-size: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
+/* --- Student guidance UI --- */
+.howto-card {
+  min-height: unset;
+}
+
+.howto-goal {
+  margin: 6px 0 10px;
+  opacity: 0.95;
+  font-size: 13px;
+}
+
+.howto-steps {
+  margin: 0 0 10px 18px;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+  opacity: 0.92;
+}
+
+.preset-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.preset-label {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-right: 4px;
+}
+
+button.chip {
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.coach-box {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.35);
+  font-size: 13px;
+  opacity: 0.95;
+}
