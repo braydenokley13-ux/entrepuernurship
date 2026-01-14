@@ -1,0 +1,85 @@
+<!-- entrepreneurship/index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOW — Step 3 — Entrepreneurship Lab (Sim 1)</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Chart.js (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+    <!-- Sim -->
+    <script defer src="./sim1.js"></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="app-title">BOW — Step 3 — Entrepreneurship Lab</div>
+      <div class="app-subtitle">Sim 1: Unit Economics</div>
+    </header>
+
+    <main class="app-main">
+      <div id="sim-root">
+        <div id="sim1">
+          <div class="controls">
+            <label>
+              <span class="label-title">Price</span>
+              <div class="control-row">
+                <input type="range" id="sim1-price" min="5" max="50" step="1" />
+                <input type="number" id="sim1-price-num" min="5" max="50" step="1" />
+              </div>
+            </label>
+
+            <label>
+              <span class="label-title">Capacity (units per period)</span>
+              <div class="control-row">
+                <input type="range" id="sim1-capacity" min="10" max="200" step="5" />
+                <input
+                  type="number"
+                  id="sim1-capacity-num"
+                  min="10"
+                  max="200"
+                  step="5"
+                />
+              </div>
+            </label>
+
+            <div class="button-row">
+              <button id="sim1-start">Start Run</button>
+              <button id="sim1-reset" class="secondary">Reset</button>
+            </div>
+          </div>
+
+          <div class="dashboard">
+            <section class="card">
+              <h3>Cash</h3>
+              <canvas id="sim1-cash-chart"></canvas>
+            </section>
+
+            <section class="card">
+              <h3>Runway (periods)</h3>
+              <canvas id="sim1-runway-chart"></canvas>
+            </section>
+
+            <section class="card">
+              <h3>Demand vs Sold</h3>
+              <canvas id="sim1-demand-chart"></canvas>
+            </section>
+
+            <section class="card">
+              <h3>Stats</h3>
+              <div id="sim1-stats" class="stats"></div>
+            </section>
+          </div>
+
+          <div id="sim1-outcome" class="outcome"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      Tip: Try low price/high volume vs high price/low volume and see what breaks.
+    </footer>
+  </body>
+</html>
