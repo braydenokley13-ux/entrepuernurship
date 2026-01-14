@@ -22,6 +22,32 @@
     <main class="app-main">
       <div id="sim-root">
         <div id="sim1">
+          <!-- ADD: Student guide -->
+<section class="card howto-card" id="sim1-howto">
+  <h3>What to do</h3>
+  <p class="howto-goal">
+    <strong>Goal:</strong> Survive <strong>10 periods</strong> without cash hitting $0.
+    <br />
+    <strong>Stretch:</strong> Finish with the most cash and profit.
+  </p>
+
+  <ol class="howto-steps">
+    <li>Pick a <strong>Price</strong> and <strong>Capacity</strong>.</li>
+    <li>Click <strong>Start Run</strong>. Watch <strong>Cash</strong>, <strong>Profit/Period</strong>, and <strong>Runway</strong>.</li>
+    <li>If you’re losing money, raise price or lower capacity and try again.</li>
+  </ol>
+
+  <div class="preset-row">
+    <span class="preset-label">Try a strategy:</span>
+    <button type="button" class="chip" id="preset-high-margin">High Margin</button>
+    <button type="button" class="chip" id="preset-high-volume">High Volume</button>
+    <button type="button" class="chip" id="preset-balanced">Balanced</button>
+    <button type="button" class="chip" id="preset-break-even">Break-even</button>
+  </div>
+
+  <div class="coach-box" id="sim1-coach">Coach: Adjust price/capacity, then press Start Run.</div>
+</section>
+
           <div class="controls">
             <label>
               <span class="label-title">Price</span>
