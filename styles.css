@@ -1,0 +1,168 @@
+/* entrepreneurship/styles.css */
+
+:root {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+  line-height: 1.35;
+}
+
+body {
+  margin: 0;
+  background: #0b0c10;
+  color: #e8e8e8;
+}
+
+.app-header {
+  padding: 18px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.app-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.app-subtitle {
+  margin-top: 4px;
+  opacity: 0.85;
+  font-size: 13px;
+}
+
+.app-main {
+  padding: 18px 20px 30px;
+}
+
+.controls {
+  display: grid;
+  gap: 14px;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+label {
+  display: grid;
+  gap: 8px;
+}
+
+.label-title {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.control-row {
+  display: grid;
+  grid-template-columns: 1fr 110px;
+  gap: 10px;
+  align-items: center;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.35);
+  color: #e8e8e8;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button.secondary {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.dashboard {
+  margin-top: 14px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  min-height: 240px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+canvas {
+  width: 100% !important;
+  height: 180px !important;
+}
+
+.stats {
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.stats hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin: 6px 0;
+}
+
+.outcome {
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.outcome h3 {
+  margin: 0 0 8px 0;
+}
+
+.outcome .hint {
+  opacity: 0.85;
+  margin-top: 10px;
+}
+
+.app-footer {
+  padding: 16px 20px;
+  opacity: 0.7;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
